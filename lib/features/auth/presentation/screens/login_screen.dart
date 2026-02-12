@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'auth_provider.dart';
+import 'package:flutter_firebase_auth/features/auth/data/auth_provider.dart';
 import 'signup_screen.dart';
 import 'phone_login_screen.dart';
 
@@ -14,6 +14,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  bool _isLoading = false;
   String? _errorMessage;
 
   @override
@@ -114,12 +115,29 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     const SizedBox(height: 32),
                     ElevatedButton(
-                      onPressed: () async {
-                        final error = await auth.signIn(
-                            _emailController.text, _passwordController.text);
-                        setState(() => _errorMessage = error);
-                      },
-                      child: const Text('Sign In'),
+                      onPressed: _isLoading
+                          ? null
+                          : () async {
+                              setState(() {
+                                _isLoading = true;
+                                _errorMessage = null;
+                              });
+                              final error = await auth.signIn(
+                                  _emailController.text,
+                                  _passwordController.text);
+                              if (!mounted) return;
+                              setState(() {
+                                _errorMessage = error;
+                                _isLoading = false;
+                              });
+                            },
+                      child: _isLoading
+                          ? const SizedBox(
+                              height: 20,
+                              width: 20,
+                              child: CircularProgressIndicator(
+                                  color: Colors.white, strokeWidth: 2))
+                          : const Text('Sign In'),
                     ),
                     const SizedBox(height: 16),
                     OutlinedButton.icon(

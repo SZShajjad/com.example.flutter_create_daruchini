@@ -1,4 +1,4 @@
-package com.example.flutter_create_daruchini
+package com.daruchini.auth
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -24,9 +24,9 @@ class AuthProvider extends ChangeNotifier {
           email: email, password: password);
       return null;
     } on FirebaseAuthException catch (e) {
-      return e.message;
+      return _getErrorMessage(e.code);
     } catch (e) {
-      return e.toString();
+      return "An unexpected error occurred.";
     }
   }
 
@@ -35,9 +35,9 @@ class AuthProvider extends ChangeNotifier {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
       return null;
     } on FirebaseAuthException catch (e) {
-      return e.message;
+      return _getErrorMessage(e.code);
     } catch (e) {
-      return e.toString();
+      return "An unexpected error occurred.";
     }
   }
 
@@ -75,9 +75,32 @@ class AuthProvider extends ChangeNotifier {
       await _auth.signInWithCredential(credential);
       return null;
     } on FirebaseAuthException catch (e) {
-      return e.message;
+      return _getErrorMessage(e.code);
     } catch (e) {
-      return e.toString();
+      return "An unexpected error occurred.";
+    }
+  }
+
+  String _getErrorMessage(String code) {
+    switch (code) {
+      case 'user-not-found':
+        return 'No user found for this email.';
+      case 'wrong-password':
+        return 'Incorrect password.';
+      case 'invalid-email':
+        return 'The email address is invalid.';
+      case 'user-disabled':
+        return 'This account has been disabled.';
+      case 'email-already-in-use':
+        return 'An account already exists for this email.';
+      case 'weak-password':
+        return 'The password is too weak.';
+      case 'invalid-credential':
+        return 'Incorrect email or password.';
+      case 'network-request-failed':
+        return 'Network error. Please check your connection.';
+      default:
+        return 'Authentication failed. Please try again.';
     }
   }
 

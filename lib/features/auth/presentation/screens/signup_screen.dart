@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'auth_provider.dart';
+import 'package:flutter_firebase_auth/features/auth/data/auth_provider.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -12,6 +12,7 @@ class SignupScreen extends StatefulWidget {
 class _SignupScreenState extends State<SignupScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  bool _isLoading = false;
   String? _errorMessage;
 
   @override
@@ -120,16 +121,33 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                     const SizedBox(height: 32),
                     ElevatedButton(
-                      onPressed: () async {
-                        final error = await auth.signUp(
-                            _emailController.text, _passwordController.text);
-                        setState(() => _errorMessage = error);
-                        if (error == null) {
-                          if (!context.mounted) return;
-                          Navigator.pop(context);
-                        }
-                      },
-                      child: const Text('Sign Up'),
+                      onPressed: _isLoading
+                          ? null
+                          : () async {
+                              setState(() {
+                                _isLoading = true;
+                                _errorMessage = null;
+                              });
+                              final error = await auth.signUp(
+                                  _emailController.text,
+                                  _passwordController.text);
+                              if (!mounted) return;
+                              setState(() {
+                                _errorMessage = error;
+                                _isLoading = false;
+                              });
+                              if (error == null) {
+                                if (!context.mounted) return;
+                                Navigator.pop(context);
+                              }
+                            },
+                      child: _isLoading
+                          ? const SizedBox(
+                              height: 20,
+                              width: 20,
+                              child: CircularProgressIndicator(
+                                  color: Colors.white, strokeWidth: 2))
+                          : const Text('Sign Up'),
                     ),
                   ],
                 ),

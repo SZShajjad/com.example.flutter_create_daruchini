@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'auth_provider.dart';
+import 'package:flutter_firebase_auth/features/auth/data/auth_provider.dart';
 // import 'package:firebase_auth/firebase_auth.dart' hide AuthProvider; // Unused in this context after refactor
 
 class PhoneLoginScreen extends StatefulWidget {
@@ -146,6 +146,7 @@ class _PhoneLoginScreenState extends State<PhoneLoginScreen> {
                                   await auth.verifyPhoneNumber(
                                     phone,
                                     onCodeSent: (verId, token) {
+                                      if (!mounted) return;
                                       setState(() {
                                         _codeSent = true;
                                         _isLoading = false;
@@ -153,6 +154,7 @@ class _PhoneLoginScreenState extends State<PhoneLoginScreen> {
                                       _startTimer();
                                     },
                                     onVerificationFailed: (e) {
+                                      if (!mounted) return;
                                       setState(() {
                                         _errorMessage = e.message;
                                         _isLoading = false;
@@ -192,6 +194,7 @@ class _PhoneLoginScreenState extends State<PhoneLoginScreen> {
                                 setState(() => _isLoading = true);
                                 final error = await auth
                                     .signInWithOtp(_otpController.text.trim());
+                                if (!mounted) return;
                                 if (error != null) {
                                   setState(() {
                                     _errorMessage = error;
