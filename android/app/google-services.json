@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "922701128473",
+    "project_id": "daruchini-auth",
+    "storage_bucket": "daruchini-auth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922701128473:android:327fec3d8fe725c0239b88",
+        "android_client_info": {
+          "package_name": "com.daruchini.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922701128473-val7sf2bpern5gnsuvbk8l2u07pvhuar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daruchini.auth",
+            "certificate_hash": "47b788ce056b5506b4157a52f595633a5c8c023f"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcxjgHDW1Y6hNSslI1RzYd1j1G_tc-oUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
