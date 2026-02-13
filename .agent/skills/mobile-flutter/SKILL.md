@@ -34,3 +34,6 @@ description: Flutter/Dart best practices and architecture.
 - **Dependency Audit**: Be wary of `^` (caret) in `pubspec.yaml` for critical plugins like `google_sign_in`. A minor update in the registry can break local builds if the Gradle environment isn't strictly aligned.
 - **Branding Integration**: When removing features (e.g., Phone Auth), ensure all branding assets and navigation links are purged to maintain a consistent "premium" look.
 - **Release Shrinking**: If `firebase_auth` or `google_sign_in` methods fail in release mode but work in debug, it's likely an R8 shrinking issue. Add `-keep` rules for the specific plugins.
+- **Controller Disposal Mandate**: Every `TextEditingController`, `FocusNode`, `AnimationController`, and `ScrollController` MUST be `.dispose()`-d. Audit every screen for this after implementation.
+- **Form Validation Pattern**: Always use `Form` + `GlobalKey<FormState>` with per-field `validator` functions. Never submit raw `TextEditingController.text` without validation.
+- **Pre-Capture Pattern**: For complex async-then-navigate chains, capture `Navigator.of(context)` or `ScaffoldMessenger.of(context)` BEFORE the `await` to avoid stale context issues.

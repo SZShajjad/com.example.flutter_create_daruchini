@@ -53,3 +53,7 @@ Future<User?> signInWithGoogle() async {
 - **Manual State Refresh**: Firebase Auth is a client-side listener. When a user verifies their email via a link, the local `User` object doesn't update automatically. You MUST call `await user.reload()` before checking `user.emailVerified`.
 - **Dependency Management**: When using `google_sign_in`, avoid the latest version if the project's Gradle or Kotlin version is lagging. Reverting to a stable, slightly older version (e.g., `6.2.1` over `7.2.0`) can resolve opaque build failures.
 - **Async Navigation**: In auth screens, asynchronous operations (like `signInWithGoogle`) often lead to navigation. Always guard these with `if (!mounted) return;` to avoid context errors on high-latency operations.
+- **Google Disconnect on Sign-Out**: Calling `FirebaseAuth.signOut()` alone doesn't disconnect Google. You MUST also call `GoogleSignIn().signOut()` or the user will be auto-logged-in on next attempt without consent.
+- **Input Trimming**: Always `.trim()` email inputs before sending to Firebase. A trailing space causes "user-not-found" errors that are invisible to the user.
+- **Anti-Enumeration**: Password reset must ALWAYS return success, regardless of whether the account exists. Firebase only sends the email if the account is real — the client should never reveal this.
+- **Subscription Lifecycle**: Store `authStateChanges().listen()` as a `StreamSubscription` and cancel it in `dispose()`. Without this, the listener leaks and fires on disposed providers.

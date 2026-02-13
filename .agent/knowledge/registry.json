@@ -1,0 +1,276 @@
+{
+    "name": "Daruchini RAG Registry",
+    "version": "5.0.0",
+    "last_updated": "2026-02-13T08:10:00Z",
+    "graph": {
+        "principles": {
+            "path": ".agent/knowledge/principles/",
+            "nodes": {
+                "prin-vibe-001": {
+                    "name": "Vibe Coder Best Practices",
+                    "file": "vibe-coder-best-practices.md"
+                },
+                "prin-vibe-002": {
+                    "name": "Vibe Coder RAG Manifesto",
+                    "file": "vibe-coder-manifesto.md"
+                },
+                "prin-ui-001": {
+                    "name": "Premium UI Vibe",
+                    "file": "premium-ui-vibe.md"
+                },
+                "prin-sys-001": {
+                    "name": "RAG Integrity & Learning",
+                    "file": "rag-integrity-and-learning.md"
+                }
+            }
+        },
+        "patterns": {
+            "path": ".agent/knowledge/patterns/",
+            "nodes": {
+                "ptrn-auth-001": {
+                    "name": "Bulletproof Auth Logic",
+                    "file": "bulletproof-auth-logic.md",
+                    "version": "2.0.0",
+                    "depends_on": [
+                        "prin-sys-001"
+                    ]
+                },
+                "ptrn-form-001": {
+                    "name": "Form Validation Patterns",
+                    "file": "form-validation-patterns.md",
+                    "version": "1.0.0",
+                    "depends_on": []
+                },
+                "ptrn-shake-feedback-001": {
+                    "name": "Shake Feedback Animation",
+                    "file": "shake-feedback-pattern.md",
+                    "version": "1.0.0"
+                },
+                "ptrn-auth-failure-001": {
+                    "name": "Robust Auth Failure",
+                    "file": "auth-failure-pattern.md",
+                    "version": "1.0.0",
+                    "depends_on": [
+                        "ptrn-auth-001"
+                    ]
+                }
+            }
+        },
+        "features": {
+            "path": ".agent/knowledge/features/",
+            "nodes": {
+                "feat-auth-001": {
+                    "name": "Secure Auth Suite",
+                    "file": "secure-auth-suite.md",
+                    "version": "2.0.0",
+                    "depends_on": [
+                        "ptrn-auth-001",
+                        "prin-ui-001",
+                        "ptrn-form-001"
+                    ]
+                }
+            }
+        },
+        "fixes": {
+            "path": ".agent/knowledge/fixes/",
+            "nodes": {
+                "fix-async-001": {
+                    "name": "Async Context Safety",
+                    "file": "async-context-safety.md",
+                    "version": "2.0.0"
+                },
+                "fix-sec-001": {
+                    "name": "Account Enumeration Prevention",
+                    "file": "account-enumeration.md",
+                    "version": "2.0.0"
+                },
+                "fix-res-001": {
+                    "name": "Resource Management & Disposal",
+                    "file": "resource-management.md",
+                    "version": "1.0.0"
+                },
+                "fix-rate-001": {
+                    "name": "Rate-Limiting UI Actions",
+                    "file": "rate-limiting-ui.md",
+                    "version": "1.0.0",
+                    "depends_on": [
+                        "fix-res-001"
+                    ]
+                },
+                "fix-google-v7": {
+                    "name": "Fix Google Sign-In v7",
+                    "file": "google-sign-in-v7.md",
+                    "version": "1.0.0"
+                },
+                "fix-frag-act": {
+                    "name": "Fix Android Fragment Activity",
+                    "file": "android-fragment-activity.md",
+                    "version": "1.0.0"
+                },
+                "fix-java-home": {
+                    "name": "Fix Missing JAVA_HOME",
+                    "file": "missing-java-home.md",
+                    "version": "1.0.0"
+                },
+                "fix-dep-fail": {
+                    "name": "Fix Dependency Failures",
+                    "file": "dependency-resolution-failure.md",
+                    "version": "1.0.0"
+                },
+                "fix-kotlin-daemon": {
+                    "name": "Fix Kotlin Daemon Connection",
+                    "file": "kotlin-daemon-connection-failure.md",
+                    "version": "1.0.0"
+                }
+            }
+        },
+        "glossary": {
+            "path": ".agent/knowledge/glossary/",
+            "nodes": {
+                "gloss-android-001": {
+                    "name": "Android Glossary",
+                    "file": "android-glossary.md",
+                    "version": "1.0.0"
+                },
+                "gloss-flutter-001": {
+                    "name": "Flutter Glossary",
+                    "file": "flutter-glossary.md",
+                    "version": "1.0.0"
+                },
+                "gloss-firebase-001": {
+                    "name": "Firebase Glossary",
+                    "file": "firebase-glossary.md",
+                    "version": "1.0.0"
+                }
+            }
+        },
+        "recipes": {
+            "path": ".agent/knowledge/recipes/",
+            "nodes": {
+                "recipe-screen-001": {
+                    "name": "Add a New Screen",
+                    "file": "add-new-screen.md",
+                    "version": "1.0.0"
+                },
+                "recipe-firebase-001": {
+                    "name": "Add a Firebase Feature",
+                    "file": "add-firebase-feature.md",
+                    "version": "1.0.0"
+                },
+                "recipe-icon-001": {
+                    "name": "Change the App Icon",
+                    "file": "change-app-icon.md",
+                    "version": "1.0.0"
+                },
+                "recipe-build-001": {
+                    "name": "Build a Release APK",
+                    "file": "build-release-apk.md",
+                    "version": "1.0.0"
+                },
+                "recipe-publish-001": {
+                    "name": "Publish to Play Store",
+                    "file": "publish-to-play-store.md",
+                    "version": "1.0.0"
+                }
+            }
+        }
+    },
+    "keywords": {
+        "premium": [
+            "prin-ui-001",
+            "feat-auth-001"
+        ],
+        "secure": [
+            "ptrn-auth-001",
+            "feat-auth-001",
+            "fix-sec-001"
+        ],
+        "auth": [
+            "feat-auth-001",
+            "ptrn-auth-001",
+            "fix-sec-001"
+        ],
+        "safety": [
+            "fix-async-001",
+            "prin-sys-001",
+            "fix-res-001"
+        ],
+        "vibe": [
+            "prin-vibe-001",
+            "prin-vibe-002"
+        ],
+        "form": [
+            "ptrn-form-001"
+        ],
+        "validation": [
+            "ptrn-form-001",
+            "ptrn-auth-001"
+        ],
+        "disposal": [
+            "fix-res-001"
+        ],
+        "rate-limit": [
+            "fix-rate-001"
+        ],
+        "glossary": [
+            "gloss-android-001",
+            "gloss-flutter-001",
+            "gloss-firebase-001"
+        ],
+        "recipe": [
+            "recipe-screen-001",
+            "recipe-firebase-001",
+            "recipe-icon-001",
+            "recipe-build-001",
+            "recipe-publish-001"
+        ],
+        "build": [
+            "recipe-build-001",
+            "recipe-publish-001"
+        ],
+        "deploy": [
+            "recipe-publish-001"
+        ],
+        "icon": [
+            "recipe-icon-001"
+        ],
+        "screen": [
+            "recipe-screen-001"
+        ],
+        "firebase": [
+            "recipe-firebase-001",
+            "gloss-firebase-001"
+        ],
+        "android": [
+            "gloss-android-001",
+            "recipe-build-001",
+            "fix-frag-act",
+            "fix-java-home"
+        ],
+        "flutter": [
+            "gloss-flutter-001",
+            "fix-google-v7",
+            "fix-dep-fail"
+        ],
+        "google-sign-in": [
+            "fix-google-v7"
+        ],
+        "crash": [
+            "fix-frag-act",
+            "fix-java-home",
+            "fix-kotlin-daemon"
+        ],
+        "gradle": [
+            "fix-java-home",
+            "recipe-build-001",
+            "fix-kotlin-daemon"
+        ],
+        "dependency": [
+            "fix-dep-fail",
+            "fix-google-v7"
+        ],
+        "kotlin": [
+            "fix-kotlin-daemon"
+        ]
+    }
+}

@@ -1,110 +1,125 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import '../../../core/errors/failures.dart';
 
 class AuthProvider extends ChangeNotifier {
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  final _storage = const FlutterSecureStorage();
+  final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
+  StreamSubscription<User?>? _authSub;
   User? _user;
 
   User? get user => _user;
   bool get isAuthenticated => _user != null;
-
-  String? _verificationId;
-  String? get verificationId => _verificationId;
+  bool get isEmailVerified => _user?.emailVerified ?? false;
 
   AuthProvider() {
-    _auth.authStateChanges().listen((User? user) {
+    _authSub = _auth.authStateChanges().listen((User? user) async {
       _user = user;
+      if (user != null) {
+        await _storage.write(key: 'last_login_email', value: user.email);
+        await _storage.write(
+            key: 'auth_provider',
+            value: user.providerData.firstOrNull?.providerId);
+      }
       notifyListeners();
     });
   }
 
-  Future<String?> signUp(String email, String password) async {
+  @override
+  void dispose() {
+    _authSub?.cancel();
+    super.dispose();
+  }
+
+  Future<void> sendEmailVerification() async {
+    await _user?.sendEmailVerification();
+  }
+
+  Future<void> reloadUser() async {
+    await _user?.reload();
+    _user = _auth.currentUser;
+    notifyListeners();
+  }
+
+  Future<Failure?> signUp(String email, String password) async {
     try {
       await _auth.createUserWithEmailAndPassword(
-          email: email, password: password);
+          email: email.trim(), password: password);
       return null;
     } on FirebaseAuthException catch (e) {
-      return _getErrorMessage(e.code);
+      return AuthFailure.fromCode(e.code);
     } catch (e) {
-      return "An unexpected error occurred.";
+      return const ServerFailure(
+          'An unexpected error occurred during sign up.');
     }
   }
 
-  Future<String?> signIn(String email, String password) async {
+  Future<Failure?> signIn(String email, String password) async {
     try {
-      await _auth.signInWithEmailAndPassword(email: email, password: password);
+      await _auth.signInWithEmailAndPassword(
+          email: email.trim(), password: password);
       return null;
     } on FirebaseAuthException catch (e) {
-      return _getErrorMessage(e.code);
+      return AuthFailure.fromCode(e.code);
     } catch (e) {
-      return "An unexpected error occurred.";
+      return const ServerFailure(
+          'An unexpected error occurred during sign in.');
     }
   }
 
-  Future<void> verifyPhoneNumber(
-    String phoneNumber, {
-    required Function(String, int?) onCodeSent,
-    required Function(FirebaseAuthException) onVerificationFailed,
-  }) async {
-    await _auth.verifyPhoneNumber(
-      phoneNumber: phoneNumber,
-      verificationCompleted: (PhoneAuthCredential credential) async {
-        await _auth.signInWithCredential(credential);
-      },
-      verificationFailed: onVerificationFailed,
-      codeSent: (String verificationId, int? resendToken) {
-        _verificationId = verificationId;
-        onCodeSent(verificationId, resendToken);
-        notifyListeners();
-      },
-      codeAutoRetrievalTimeout: (String verificationId) {
-        _verificationId = verificationId;
-      },
-    );
-  }
-
-  Future<String?> signInWithOtp(String smsCode) async {
-    if (_verificationId == null) {
-      return "Verification ID is null. Request code first.";
-    }
+  Future<Failure?> signInWithGoogle() async {
     try {
-      final credential = PhoneAuthProvider.credential(
-        verificationId: _verificationId!,
-        smsCode: smsCode,
+      await _googleSignIn.initialize();
+      final GoogleSignInAccount googleUser =
+          await _googleSignIn.authenticate();
+
+      final GoogleSignInAuthentication googleAuth =
+          googleUser.authentication;
+      final credential = GoogleAuthProvider.credential(
+        idToken: googleAuth.idToken,
       );
-      await _auth.signInWithCredential(credential);
+
+      final userCredential = await _auth.signInWithCredential(credential);
+      _user = userCredential.user;
+      notifyListeners();
       return null;
+    } on GoogleSignInException catch (e) {
+      // In v7.x, we check logic
+      if (e.toString().toLowerCase().contains('canceled')) {
+        return const AuthFailure('canceled', 'Sign-in cancelled.');
+      }
+      return const AuthFailure('google-sign-in', 'Google Sign-In failed.');
     } on FirebaseAuthException catch (e) {
-      return _getErrorMessage(e.code);
+      return AuthFailure.fromCode(e.code);
     } catch (e) {
-      return "An unexpected error occurred.";
+      debugPrint("Google Sign-In Error: $e");
+      return const ServerFailure(
+          'An unexpected error occurred with Google Sign-In.');
     }
   }
 
-  String _getErrorMessage(String code) {
-    switch (code) {
-      case 'user-not-found':
-        return 'No user found for this email.';
-      case 'wrong-password':
-        return 'Incorrect password.';
-      case 'invalid-email':
-        return 'The email address is invalid.';
-      case 'user-disabled':
-        return 'This account has been disabled.';
-      case 'email-already-in-use':
-        return 'An account already exists for this email.';
-      case 'weak-password':
-        return 'The password is too weak.';
-      case 'invalid-credential':
-        return 'Incorrect email or password.';
-      case 'network-request-failed':
-        return 'Network error. Please check your connection.';
-      default:
-        return 'Authentication failed. Please try again.';
+  Future<Failure?> sendPasswordResetEmail(String email) async {
+    try {
+      await _auth.sendPasswordResetEmail(email: email.trim());
+      return null;
+    } on FirebaseAuthException catch (_) {
+      // Always return success to prevent account enumeration.
+      return null;
+    } catch (e) {
+      return const ServerFailure('An unexpected error occurred.');
     }
   }
 
   Future<void> signOut() async {
-    await _auth.signOut();
+    try {
+      await _googleSignIn.signOut();
+      await _auth.signOut();
+    } catch (e) {
+      debugPrint("Sign out error: $e");
+    }
   }
 }

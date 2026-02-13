@@ -1,0 +1,45 @@
+Running Gradle task 'assembleDebug'...                          
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\java\io\adaptant\labs\flutter_windowmanager\FlutterWindowManagerPlugin.java:17: error: cannot find symbol
+import io.flutter.plugin.common.PluginRegistry.Registrar;
+                                              ^
+  symbol:   class Registrar
+  location: interface PluginRegistry
+C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\java\io\adaptant\labs\flutter_windowmanager\FlutterWindowManagerPlugin.java:32: error: cannot find symbol
+  public static void registerWith(Registrar registrar) {
+                                  ^
+  symbol:   class Registrar
+  location: class FlutterWindowManagerPlugin
+2 errors
+3 warnings
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':flutter_windowmanager:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  warning: [options] target value 8 is obsolete and will be removed in a future release
+  warning: [options] source value 8 is obsolete and will be removed in a future release
+  C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\java\io\adaptant\labs\flutter_windowmanager\FlutterWindowManagerPlugin.java:17: error: cannot find symbol
+  import io.flutter.plugin.common.PluginRegistry.Registrar;
+                                                ^
+    symbol:   class Registrar
+    location: interface PluginRegistry
+  C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\java\io\adaptant\labs\flutter_windowmanager\FlutterWindowManagerPlugin.java:32: error: cannot find symbol
+    public static void registerWith(Registrar registrar) {
+                                    ^
+    symbol:   class Registrar
+    location: class FlutterWindowManagerPlugin
+  warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+  2 errors
+  3 warnings
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 13s
+Running Gradle task 'assembleDebug'...                             ১৩.৬s
+Gradle task assembleDebug failed with exit code 1

@@ -1,4 +1,4 @@
-name: flutter_firebase_auth
+name: daruchini_auth
 description: A Flutter app with Firebase Authentication.
 publish_to: 'none'
 version: 1.0.0+1
@@ -9,14 +9,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.17.9
+  firebase_core: ^4.4.0
+  firebase_auth: ^6.1.4
   provider: ^6.1.1  # For state management
+  google_sign_in: ^7.2.0
+  flutter_secure_storage: ^10.0.0
+  local_auth: ^3.0.0
+  google_fonts: ^8.0.1
+  flutter_staggered_animations: ^1.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true

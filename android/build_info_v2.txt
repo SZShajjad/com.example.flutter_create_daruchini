@@ -1,0 +1,1096 @@
+Initialized native services in: C:\Users\sharm\.gradle\native
+Initialized jansi services in: C:\Users\sharm\.gradle\native
+Found daemon DaemonInfo{pid=21424, address=[c7eb1c41-b583-47e2-8cca-4a2132db15ec port:62918, addresses:[/127.0.0.1]], state=Idle, lastBusy=1770953785391, context=DefaultDaemonContext[uid=6fd8a7e7-a7fc-40a7-af0e-927ff45cb997,javaHome=C:\Program Files\Java\jdk-17,javaVersion=17,javaVendor=Oracle Corporation,daemonRegistryDir=C:\Users\sharm\.gradle\daemon,pid=21424,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Android\Android Studio\jbr (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=6fd8a7e7-a7fc-40a7-af0e-927ff45cb997,javaHome=C:\Program Files\Java\jdk-17,javaVersion=17,javaVendor=Oracle Corporation,daemonRegistryDir=C:\Users\sharm\.gradle\daemon,pid=21424,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 1872). The daemon log file: C:\Users\sharm\.gradle\daemon\8.14\daemon-1872.out.log
+Starting 25th build in daemon [uptime: 1 hrs 35 mins 33.124 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 8 worker leases.
+Now considering [D:\Food\flutter create daruchini\flutter_create_daruchini\android, D:\Food\flutter\packages\flutter_tools\gradle] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Now considering [D:\Food\flutter\packages\flutter_tools\gradle, D:\Food\flutter create daruchini\flutter_create_daruchini\android] as hierarchies to watch
+
+> Configure project :gradle
+Evaluating project ':gradle' using build file 'D:\Food\flutter\packages\flutter_tools\gradle\build.gradle.kts'.
+Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+Resolved plugin [id: 'org.gradle.groovy']
+Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.2.0']
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '1.9.20']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+file or directory 'D:\Food\flutter\packages\flutter_tools\gradle\src\main\java', not found
+Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+Resolved plugin [id: 'com.android.application', version: '8.11.1', apply: false]
+Resolved plugin [id: 'com.google.gms.google-services', version: '4.4.0', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.2.20', apply: false]
+Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle:compileKotlin (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:gradle:compileKotlin (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :gradle:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle:compileJava (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:gradle:compileJava (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :gradle:compileJava NO-SOURCE
+Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle:compileGroovy (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:gradle:compileGroovy (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :gradle:compileGroovy NO-SOURCE
+Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+Resolve mutations for :gradle:pluginDescriptors (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:gradle:pluginDescriptors (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :gradle:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle:processResources (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:gradle:processResources (Thread[#2655,included builds,5,main]) started.
+
+> Task :gradle:processResources UP-TO-DATE
+Caching disabled for task ':gradle:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:processResources' as it is up-to-date.
+Resolve mutations for :gradle:classes (Thread[#2655,included builds,5,main]) started.
+:gradle:classes (Thread[#2655,included builds,5,main]) started.
+
+> Task :gradle:classes UP-TO-DATE
+Skipping task ':gradle:classes' as it has no actions.
+Resolve mutations for :gradle:jar (Thread[#2655,included builds,5,main]) started.
+:gradle:jar (Thread[#2655,included builds,5,main]) started.
+
+> Task :gradle:jar UP-TO-DATE
+Caching disabled for task ':gradle:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:jar' as it is up-to-date.
+Settings evaluated using settings file 'D:\Food\flutter create daruchini\flutter_create_daruchini\android\settings.gradle.kts'.
+Projects loaded. Root project using build file 'D:\Food\flutter create daruchini\flutter_create_daruchini\android\build.gradle.kts'.
+Included projects: [root project 'android', project ':app', project ':firebase_auth', project ':firebase_core', project ':flutter_plugin_android_lifecycle', project ':flutter_secure_storage', project ':flutter_windowmanager', project ':google_sign_in_android', project ':local_auth_android', project ':path_provider_android']
+
+> Configure project :
+Evaluating root project 'android' using build file 'D:\Food\flutter create daruchini\flutter_create_daruchini\android\build.gradle.kts'.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage1) because:
+  Build cache is disabled
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+  Build cache is disabled
+
+> Configure project :app
+Evaluating project ':app' using build file 'D:\Food\flutter create daruchini\flutter_create_daruchini\android\app\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application']
+Resolved plugin [id: 'kotlin-android']
+Resolved plugin [id: 'com.google.gms.google-services']
+Resolved plugin [id: 'kotlin-parcelize']
+Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+Using default execution profile
+Build 339633ba-ff44-41fe-ad37-cf93de2b7955 is started
+Using Kotlin Gradle Plugin gradle813 variant
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\sharm\AppData\Local\Android\sdk
+
+> Configure project :firebase_auth
+Evaluating project ':firebase_auth' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-6.1.4\android\build.gradle'.
+Using default execution profile
+
+> Configure project :firebase_core
+Evaluating project ':firebase_core' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-4.4.0\android\build.gradle'.
+Using default execution profile
+
+> Configure project :flutter_plugin_android_lifecycle
+Evaluating project ':flutter_plugin_android_lifecycle' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.33\android\build.gradle'.
+Using default execution profile
+
+> Configure project :flutter_secure_storage
+Evaluating project ':flutter_secure_storage' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_secure_storage-10.0.0\android\build.gradle'.
+Using default execution profile
+
+> Configure project :flutter_windowmanager
+Evaluating project ':flutter_windowmanager' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\build.gradle'.
+Using default execution profile
+
+> Configure project :google_sign_in_android
+Evaluating project ':google_sign_in_android' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\google_sign_in_android-7.2.7\android\build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle813 variant
+
+> Configure project :local_auth_android
+Evaluating project ':local_auth_android' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\local_auth_android-1.0.56\android\build.gradle'.
+Using default execution profile
+
+> Configure project :path_provider_android
+Evaluating project ':path_provider_android' using build file 'C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.22\android\build.gradle'.
+Using default execution profile
+All projects evaluated.
+Task name matched 'assembleDebug'
+Selected primary task 'assembleDebug' from project :
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Tasks to be executed: [task ':app:DebugMinSdkCheck', task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:generateDebugBuildConfig', task ':app:compileFlutterBuildDebug', task ':app:packJniLibsflutterBuildDebug', task ':firebase_auth:preBuild', task ':firebase_auth:preDebugBuild', task ':firebase_auth:writeDebugAarMetadata', task ':firebase_core:preBuild', task ':firebase_core:preDebugBuild', task ':firebase_core:writeDebugAarMetadata', task ':flutter_plugin_android_lifecycle:preBuild', task ':flutter_plugin_android_lifecycle:preDebugBuild', task ':flutter_plugin_android_lifecycle:writeDebugAarMetadata', task ':flutter_secure_storage:preBuild', task ':flutter_secure_storage:preDebugBuild', task ':flutter_secure_storage:writeDebugAarMetadata', task ':flutter_windowmanager:preBuild', task ':flutter_windowmanager:preDebugBuild', task ':flutter_windowmanager:writeDebugAarMetadata', task ':google_sign_in_android:preBuild', task ':google_sign_in_android:preDebugBuild', task ':google_sign_in_android:writeDebugAarMetadata', task ':local_auth_android:preBuild', task ':local_auth_android:preDebugBuild', task ':local_auth_android:writeDebugAarMetadata', task ':path_provider_android:preBuild', task ':path_provider_android:preDebugBuild', task ':path_provider_android:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:cleanMergeDebugAssets', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':firebase_auth:mergeDebugShaders', task ':firebase_auth:compileDebugShaders', task ':firebase_auth:generateDebugAssets', task ':firebase_auth:mergeDebugAssets', task ':firebase_core:mergeDebugShaders', task ':firebase_core:compileDebugShaders', task ':firebase_core:generateDebugAssets', task ':firebase_core:mergeDebugAssets', task ':flutter_plugin_android_lifecycle:mergeDebugShaders', task ':flutter_plugin_android_lifecycle:compileDebugShaders', task ':flutter_plugin_android_lifecycle:generateDebugAssets', task ':flutter_plugin_android_lifecycle:mergeDebugAssets', task ':flutter_secure_storage:mergeDebugShaders', task ':flutter_secure_storage:compileDebugShaders', task ':flutter_secure_storage:generateDebugAssets', task ':flutter_secure_storage:mergeDebugAssets', task ':flutter_windowmanager:mergeDebugShaders', task ':flutter_windowmanager:compileDebugShaders', task ':flutter_windowmanager:generateDebugAssets', task ':flutter_windowmanager:mergeDebugAssets', task ':google_sign_in_android:mergeDebugShaders', task ':google_sign_in_android:compileDebugShaders', task ':google_sign_in_android:generateDebugAssets', task ':google_sign_in_android:mergeDebugAssets', task ':local_auth_android:mergeDebugShaders', task ':local_auth_android:compileDebugShaders', task ':local_auth_android:generateDebugAssets', task ':local_auth_android:mergeDebugAssets', task ':path_provider_android:mergeDebugShaders', task ':path_provider_android:compileDebugShaders', task ':path_provider_android:generateDebugAssets', task ':path_provider_android:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:copyFlutterAssetsDebug', task ':app:generateDebugResValues', task ':app:processDebugGoogleServices', task ':firebase_auth:generateDebugResValues', task ':firebase_auth:generateDebugResources', task ':firebase_auth:packageDebugResources', task ':firebase_core:generateDebugResValues', task ':firebase_core:generateDebugResources', task ':firebase_core:packageDebugResources', task ':flutter_plugin_android_lifecycle:generateDebugResValues', task ':flutter_plugin_android_lifecycle:generateDebugResources', task ':flutter_plugin_android_lifecycle:packageDebugResources', task ':flutter_secure_storage:generateDebugResValues', task ':flutter_secure_storage:generateDebugResources', task ':flutter_secure_storage:packageDebugResources', task ':flutter_windowmanager:generateDebugResValues', task ':flutter_windowmanager:generateDebugResources', task ':flutter_windowmanager:packageDebugResources', task ':google_sign_in_android:generateDebugResValues', task ':google_sign_in_android:generateDebugResources', task ':google_sign_in_android:packageDebugResources', task ':local_auth_android:generateDebugResValues', task ':local_auth_android:generateDebugResources', task ':local_auth_android:packageDebugResources', task ':path_provider_android:generateDebugResValues', task ':path_provider_android:generateDebugResources', task ':path_provider_android:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':firebase_auth:extractDeepLinksDebug', task ':firebase_auth:processDebugManifest', task ':firebase_core:extractDeepLinksDebug', task ':firebase_core:processDebugManifest', task ':flutter_plugin_android_lifecycle:extractDeepLinksDebug', task ':flutter_plugin_android_lifecycle:processDebugManifest', task ':flutter_secure_storage:extractDeepLinksDebug', task ':flutter_secure_storage:processDebugManifest', task ':flutter_windowmanager:extractDeepLinksDebug', task ':flutter_windowmanager:processDebugManifest', task ':google_sign_in_android:extractDeepLinksDebug', task ':google_sign_in_android:processDebugManifest', task ':local_auth_android:extractDeepLinksDebug', task ':local_auth_android:processDebugManifest', task ':path_provider_android:extractDeepLinksDebug', task ':path_provider_android:processDebugManifest', task ':app:processDebugMainManifest', task ':app:outputDebugAppLinkSettings', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':firebase_auth:compileDebugLibraryResources', task ':firebase_auth:parseDebugLocalResources', task ':firebase_auth:generateDebugRFile', task ':firebase_core:compileDebugLibraryResources', task ':firebase_core:parseDebugLocalResources', task ':firebase_core:generateDebugRFile', task ':flutter_plugin_android_lifecycle:compileDebugLibraryResources', task ':flutter_plugin_android_lifecycle:parseDebugLocalResources', task ':flutter_plugin_android_lifecycle:generateDebugRFile', task ':flutter_secure_storage:compileDebugLibraryResources', task ':flutter_secure_storage:parseDebugLocalResources', task ':flutter_secure_storage:generateDebugRFile', task ':flutter_windowmanager:compileDebugLibraryResources', task ':flutter_windowmanager:parseDebugLocalResources', task ':flutter_windowmanager:generateDebugRFile', task ':google_sign_in_android:compileDebugLibraryResources', task ':google_sign_in_android:parseDebugLocalResources', task ':google_sign_in_android:generateDebugRFile', task ':local_auth_android:compileDebugLibraryResources', task ':local_auth_android:parseDebugLocalResources', task ':local_auth_android:generateDebugRFile', task ':path_provider_android:compileDebugLibraryResources', task ':path_provider_android:parseDebugLocalResources', task ':path_provider_android:generateDebugRFile', task ':app:processDebugResources', task ':firebase_auth:generateDebugBuildConfig', task ':firebase_auth:javaPreCompileDebug', task ':firebase_core:generateDebugBuildConfig', task ':firebase_core:javaPreCompileDebug', task ':firebase_core:compileDebugJavaWithJavac', task ':firebase_core:bundleLibCompileToJarDebug', task ':firebase_auth:compileDebugJavaWithJavac', task ':firebase_auth:bundleLibCompileToJarDebug', task ':flutter_plugin_android_lifecycle:javaPreCompileDebug', task ':flutter_plugin_android_lifecycle:compileDebugJavaWithJavac', task ':flutter_plugin_android_lifecycle:bundleLibCompileToJarDebug', task ':flutter_secure_storage:generateDebugBuildConfig', task ':flutter_secure_storage:javaPreCompileDebug', task ':flutter_secure_storage:compileDebugJavaWithJavac', task ':flutter_secure_storage:bundleLibCompileToJarDebug', task ':flutter_windowmanager:javaPreCompileDebug', task ':flutter_windowmanager:compileDebugJavaWithJavac', task ':flutter_windowmanager:bundleLibCompileToJarDebug', task ':google_sign_in_android:checkKotlinGradlePluginConfigurationErrors', task ':google_sign_in_android:compileDebugKotlin', task ':google_sign_in_android:javaPreCompileDebug', task ':google_sign_in_android:compileDebugJavaWithJavac', task ':google_sign_in_android:bundleLibCompileToJarDebug', task ':local_auth_android:javaPreCompileDebug', task ':local_auth_android:compileDebugJavaWithJavac', task ':local_auth_android:bundleLibCompileToJarDebug', task ':path_provider_android:javaPreCompileDebug', task ':path_provider_android:compileDebugJavaWithJavac', task ':path_provider_android:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:compressDebugAssets', task ':firebase_auth:bundleLibRuntimeToJarDebug', task ':firebase_core:bundleLibRuntimeToJarDebug', task ':local_auth_android:bundleLibRuntimeToJarDebug', task ':flutter_plugin_android_lifecycle:bundleLibRuntimeToJarDebug', task ':flutter_secure_storage:bundleLibRuntimeToJarDebug', task ':flutter_windowmanager:bundleLibRuntimeToJarDebug', task ':google_sign_in_android:bundleLibRuntimeToJarDebug', task ':path_provider_android:bundleLibRuntimeToJarDebug', task ':app:desugarDebugFileDependencies', task ':app:dexBuilderDebug', task ':app:mergeDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':firebase_auth:processDebugJavaRes', task ':firebase_core:processDebugJavaRes', task ':flutter_plugin_android_lifecycle:processDebugJavaRes', task ':flutter_secure_storage:processDebugJavaRes', task ':flutter_windowmanager:processDebugJavaRes', task ':google_sign_in_android:processDebugJavaRes', task ':local_auth_android:processDebugJavaRes', task ':path_provider_android:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:mergeExtDexDebug', task ':firebase_auth:bundleLibRuntimeToDirDebug', task ':firebase_core:bundleLibRuntimeToDirDebug', task ':local_auth_android:bundleLibRuntimeToDirDebug', task ':flutter_plugin_android_lifecycle:bundleLibRuntimeToDirDebug', task ':flutter_secure_storage:bundleLibRuntimeToDirDebug', task ':flutter_windowmanager:bundleLibRuntimeToDirDebug', task ':google_sign_in_android:bundleLibRuntimeToDirDebug', task ':path_provider_android:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:mergeProjectDexDebug', task ':app:configureCMakeDebug[arm64-v8a]', task ':app:buildCMakeDebug[arm64-v8a]', task ':app:configureCMakeDebug[armeabi-v7a]', task ':app:buildCMakeDebug[armeabi-v7a]', task ':app:configureCMakeDebug[x86_64]', task ':app:buildCMakeDebug[x86_64]', task ':app:mergeDebugJniLibFolders', task ':firebase_auth:mergeDebugJniLibFolders', task ':firebase_auth:mergeDebugNativeLibs', task ':firebase_auth:copyDebugJniLibsProjectOnly', task ':firebase_core:mergeDebugJniLibFolders', task ':firebase_core:mergeDebugNativeLibs', task ':firebase_core:copyDebugJniLibsProjectOnly', task ':flutter_plugin_android_lifecycle:mergeDebugJniLibFolders', task ':flutter_plugin_android_lifecycle:mergeDebugNativeLibs', task ':flutter_plugin_android_lifecycle:copyDebugJniLibsProjectOnly', task ':flutter_secure_storage:mergeDebugJniLibFolders', task ':flutter_secure_storage:mergeDebugNativeLibs', task ':flutter_secure_storage:copyDebugJniLibsProjectOnly', task ':flutter_windowmanager:mergeDebugJniLibFolders', task ':flutter_windowmanager:mergeDebugNativeLibs', task ':flutter_windowmanager:copyDebugJniLibsProjectOnly', task ':google_sign_in_android:mergeDebugJniLibFolders', task ':google_sign_in_android:mergeDebugNativeLibs', task ':google_sign_in_android:copyDebugJniLibsProjectOnly', task ':local_auth_android:mergeDebugJniLibFolders', task ':local_auth_android:mergeDebugNativeLibs', task ':local_auth_android:copyDebugJniLibsProjectOnly', task ':path_provider_android:mergeDebugJniLibFolders', task ':path_provider_android:mergeDebugNativeLibs', task ':path_provider_android:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':firebase_auth:stripDebugDebugSymbols', task ':firebase_auth:copyDebugJniLibsProjectAndLocalJars', task ':firebase_auth:extractDebugAnnotations', task ':firebase_auth:extractDeepLinksForAarDebug', task ':firebase_auth:mergeDebugGeneratedProguardFiles', task ':firebase_auth:mergeDebugConsumerProguardFiles', task ':firebase_auth:prepareDebugArtProfile', task ':firebase_auth:prepareLintJarForPublish', task ':firebase_auth:mergeDebugJavaResource', task ':firebase_auth:syncDebugLibJars', task ':firebase_auth:bundleDebugAar', task ':firebase_auth:assembleDebug', task ':firebase_core:stripDebugDebugSymbols', task ':firebase_core:copyDebugJniLibsProjectAndLocalJars', task ':firebase_core:extractDebugAnnotations', task ':firebase_core:extractDeepLinksForAarDebug', task ':firebase_core:mergeDebugGeneratedProguardFiles', task ':firebase_core:mergeDebugConsumerProguardFiles', task ':firebase_core:prepareDebugArtProfile', task ':firebase_core:prepareLintJarForPublish', task ':firebase_core:mergeDebugJavaResource', task ':firebase_core:syncDebugLibJars', task ':firebase_core:bundleDebugAar', task ':firebase_core:assembleDebug', task ':flutter_plugin_android_lifecycle:stripDebugDebugSymbols', task ':flutter_plugin_android_lifecycle:copyDebugJniLibsProjectAndLocalJars', task ':flutter_plugin_android_lifecycle:extractDebugAnnotations', task ':flutter_plugin_android_lifecycle:extractDeepLinksForAarDebug', task ':flutter_plugin_android_lifecycle:mergeDebugGeneratedProguardFiles', task ':flutter_plugin_android_lifecycle:mergeDebugConsumerProguardFiles', task ':flutter_plugin_android_lifecycle:prepareDebugArtProfile', task ':flutter_plugin_android_lifecycle:prepareLintJarForPublish', task ':flutter_plugin_android_lifecycle:mergeDebugJavaResource', task ':flutter_plugin_android_lifecycle:syncDebugLibJars', task ':flutter_plugin_android_lifecycle:bundleDebugAar', task ':flutter_plugin_android_lifecycle:assembleDebug', task ':flutter_secure_storage:stripDebugDebugSymbols', task ':flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars', task ':flutter_secure_storage:extractDebugAnnotations', task ':flutter_secure_storage:extractDeepLinksForAarDebug', task ':flutter_secure_storage:mergeDebugGeneratedProguardFiles', task ':flutter_secure_storage:mergeDebugConsumerProguardFiles', task ':flutter_secure_storage:prepareDebugArtProfile', task ':flutter_secure_storage:prepareLintJarForPublish', task ':flutter_secure_storage:mergeDebugJavaResource', task ':flutter_secure_storage:syncDebugLibJars', task ':flutter_secure_storage:bundleDebugAar', task ':flutter_secure_storage:assembleDebug', task ':flutter_windowmanager:stripDebugDebugSymbols', task ':flutter_windowmanager:copyDebugJniLibsProjectAndLocalJars', task ':flutter_windowmanager:extractDebugAnnotations', task ':flutter_windowmanager:extractDeepLinksForAarDebug', task ':flutter_windowmanager:mergeDebugGeneratedProguardFiles', task ':flutter_windowmanager:mergeDebugConsumerProguardFiles', task ':flutter_windowmanager:prepareDebugArtProfile', task ':flutter_windowmanager:prepareLintJarForPublish', task ':flutter_windowmanager:mergeDebugJavaResource', task ':flutter_windowmanager:syncDebugLibJars', task ':flutter_windowmanager:bundleDebugAar', task ':flutter_windowmanager:assembleDebug', task ':google_sign_in_android:stripDebugDebugSymbols', task ':google_sign_in_android:copyDebugJniLibsProjectAndLocalJars', task ':google_sign_in_android:extractDebugAnnotations', task ':google_sign_in_android:extractDeepLinksForAarDebug', task ':google_sign_in_android:mergeDebugGeneratedProguardFiles', task ':google_sign_in_android:mergeDebugConsumerProguardFiles', task ':google_sign_in_android:prepareDebugArtProfile', task ':google_sign_in_android:prepareLintJarForPublish', task ':google_sign_in_android:mergeDebugJavaResource', task ':google_sign_in_android:syncDebugLibJars', task ':google_sign_in_android:bundleDebugAar', task ':google_sign_in_android:assembleDebug', task ':local_auth_android:stripDebugDebugSymbols', task ':local_auth_android:copyDebugJniLibsProjectAndLocalJars', task ':local_auth_android:extractDebugAnnotations', task ':local_auth_android:extractDeepLinksForAarDebug', task ':local_auth_android:mergeDebugGeneratedProguardFiles', task ':local_auth_android:mergeDebugConsumerProguardFiles', task ':local_auth_android:prepareDebugArtProfile', task ':local_auth_android:prepareLintJarForPublish', task ':local_auth_android:mergeDebugJavaResource', task ':local_auth_android:syncDebugLibJars', task ':local_auth_android:bundleDebugAar', task ':local_auth_android:assembleDebug', task ':path_provider_android:stripDebugDebugSymbols', task ':path_provider_android:copyDebugJniLibsProjectAndLocalJars', task ':path_provider_android:extractDebugAnnotations', task ':path_provider_android:extractDeepLinksForAarDebug', task ':path_provider_android:mergeDebugGeneratedProguardFiles', task ':path_provider_android:mergeDebugConsumerProguardFiles', task ':path_provider_android:prepareDebugArtProfile', task ':path_provider_android:prepareLintJarForPublish', task ':path_provider_android:mergeDebugJavaResource', task ':path_provider_android:syncDebugLibJars', task ':path_provider_android:bundleDebugAar', task ':path_provider_android:assembleDebug']
+Tasks that were excluded: []
+work action Parameters of IdentityTransform (Thread[#2656,Execution worker,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[#2656,Execution worker,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[#2656,Execution worker,5,main]) started.
+work action Parameters of ClassesDirToClassesTransform (Thread[#2656,Execution worker,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[#2660,Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:DebugMinSdkCheck (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:DebugMinSdkCheck (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:DebugMinSdkCheck
+Caching disabled for task ':app:DebugMinSdkCheck' because:
+  Build cache is disabled
+Task ':app:DebugMinSdkCheck' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:preBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:preBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:preDebugBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:generateDebugBuildConfig (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:generateDebugBuildConfig (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':app:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :app:compileFlutterBuildDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:compileFlutterBuildDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:compileFlutterBuildDebug
+Caching disabled for task ':app:compileFlutterBuildDebug' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Task ':app:compileFlutterBuildDebug' is not up-to-date because:
+  Value of input property 'dartDefines' has changed for task ':app:compileFlutterBuildDebug'
+  Value of input property 'targetPath' has changed for task ':app:compileFlutterBuildDebug'
+Starting process 'command 'D:\Food\flutter\bin\flutter.bat''. Working directory: D:\Food\flutter create daruchini\flutter_create_daruchini Command: D:\Food\flutter\bin\flutter.bat --quiet assemble --no-version-check --depfile D:\Food\flutter create daruchini\flutter_create_daruchini\build\app\intermediates\flutter\debug/flutter_build.d --output D:\Food\flutter create daruchini\flutter_create_daruchini\build\app\intermediates\flutter\debug -dTargetFile=lib/main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true -dFlavor= -dAndroidArchs=android-arm android-arm64 android-x64 -dMinSdkVersion=29 debug_android_application
+Successfully started process 'command 'D:\Food\flutter\bin\flutter.bat''
+Resolve mutations for :app:packJniLibsflutterBuildDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:app:packJniLibsflutterBuildDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :app:packJniLibsflutterBuildDebug UP-TO-DATE
+Caching disabled for task ':app:packJniLibsflutterBuildDebug' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':app:packJniLibsflutterBuildDebug' as it is up-to-date.
+Resolve mutations for :firebase_auth:preBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:firebase_auth:preBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :firebase_auth:preBuild UP-TO-DATE
+Skipping task ':firebase_auth:preBuild' as it has no actions.
+Resolve mutations for :firebase_auth:preDebugBuild (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:firebase_auth:preDebugBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :firebase_auth:preDebugBuild UP-TO-DATE
+Skipping task ':firebase_auth:preDebugBuild' as it has no actions.
+Resolve mutations for :firebase_auth:writeDebugAarMetadata (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:firebase_auth:writeDebugAarMetadata (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :firebase_auth:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':firebase_auth:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':firebase_auth:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :firebase_auth) (Thread[#2658,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :firebase_core:preBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:firebase_core:preBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :firebase_core:preBuild UP-TO-DATE
+Skipping task ':firebase_core:preBuild' as it has no actions.
+Resolve mutations for :firebase_core:preDebugBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:firebase_core:preDebugBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :firebase_core:preDebugBuild UP-TO-DATE
+Skipping task ':firebase_core:preDebugBuild' as it has no actions.
+Resolve mutations for :firebase_core:writeDebugAarMetadata (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:firebase_core:writeDebugAarMetadata (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :firebase_core:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':firebase_core:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':firebase_core:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :firebase_core) (Thread[#2658,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :flutter_plugin_android_lifecycle:preBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:flutter_plugin_android_lifecycle:preBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:preBuild UP-TO-DATE
+Skipping task ':flutter_plugin_android_lifecycle:preBuild' as it has no actions.
+Resolve mutations for :flutter_plugin_android_lifecycle:preDebugBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:flutter_plugin_android_lifecycle:preDebugBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:preDebugBuild UP-TO-DATE
+Skipping task ':flutter_plugin_android_lifecycle:preDebugBuild' as it has no actions.
+Resolve mutations for :flutter_plugin_android_lifecycle:writeDebugAarMetadata (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:flutter_plugin_android_lifecycle:writeDebugAarMetadata (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':flutter_plugin_android_lifecycle:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :flutter_plugin_android_lifecycle) (Thread[#2658,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :flutter_secure_storage:preBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:flutter_secure_storage:preBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+
+> Task :flutter_secure_storage:preBuild UP-TO-DATE
+Skipping task ':flutter_secure_storage:preBuild' as it has no actions.
+Resolve mutations for :flutter_secure_storage:preDebugBuild (Thread[#2658,Execution worker Thread 3,5,main]) started.
+:flutter_secure_storage:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_secure_storage:preDebugBuild UP-TO-DATE
+Skipping task ':flutter_secure_storage:preDebugBuild' as it has no actions.
+Resolve mutations for :flutter_secure_storage:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:flutter_secure_storage:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_secure_storage:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':flutter_secure_storage:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :flutter_secure_storage) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :flutter_windowmanager:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:flutter_windowmanager:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_windowmanager:preBuild UP-TO-DATE
+Skipping task ':flutter_windowmanager:preBuild' as it has no actions.
+Resolve mutations for :flutter_windowmanager:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:flutter_windowmanager:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_windowmanager:preDebugBuild UP-TO-DATE
+Skipping task ':flutter_windowmanager:preDebugBuild' as it has no actions.
+Resolve mutations for :flutter_windowmanager:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:flutter_windowmanager:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_windowmanager:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':flutter_windowmanager:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :flutter_windowmanager) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :google_sign_in_android:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:google_sign_in_android:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :google_sign_in_android:preBuild UP-TO-DATE
+Skipping task ':google_sign_in_android:preBuild' as it has no actions.
+Resolve mutations for :google_sign_in_android:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:google_sign_in_android:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :google_sign_in_android:preDebugBuild UP-TO-DATE
+Skipping task ':google_sign_in_android:preDebugBuild' as it has no actions.
+Resolve mutations for :google_sign_in_android:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:google_sign_in_android:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :google_sign_in_android:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':google_sign_in_android:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :google_sign_in_android) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :local_auth_android:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:local_auth_android:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :local_auth_android:preBuild UP-TO-DATE
+Skipping task ':local_auth_android:preBuild' as it has no actions.
+Resolve mutations for :local_auth_android:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:local_auth_android:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :local_auth_android:preDebugBuild UP-TO-DATE
+Skipping task ':local_auth_android:preDebugBuild' as it has no actions.
+Resolve mutations for :local_auth_android:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:local_auth_android:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :local_auth_android:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':local_auth_android:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':local_auth_android:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :local_auth_android) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :path_provider_android:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:path_provider_android:preBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :path_provider_android:preBuild UP-TO-DATE
+Skipping task ':path_provider_android:preBuild' as it has no actions.
+Resolve mutations for :path_provider_android:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:path_provider_android:preDebugBuild (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :path_provider_android:preDebugBuild UP-TO-DATE
+Skipping task ':path_provider_android:preDebugBuild' as it has no actions.
+Resolve mutations for :path_provider_android:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:path_provider_android:writeDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :path_provider_android:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':path_provider_android:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':path_provider_android:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :path_provider_android) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:cleanMergeDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:app:cleanMergeDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :app:cleanMergeDebugAssets
+Caching disabled for task ':app:cleanMergeDebugAssets' because:
+  Build cache is disabled
+Task ':app:cleanMergeDebugAssets' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:app:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':app:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :app:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:app:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugShaders NO-SOURCE
+Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:app:generateDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :firebase_auth:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_auth:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_auth:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':firebase_auth:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_auth:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :firebase_auth:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_auth:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_auth:compileDebugShaders NO-SOURCE
+Skipping task ':firebase_auth:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :firebase_auth:generateDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_auth:generateDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_auth:generateDebugAssets UP-TO-DATE
+Skipping task ':firebase_auth:generateDebugAssets' as it has no actions.
+Resolve mutations for :firebase_auth:mergeDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_auth:mergeDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_auth:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':firebase_auth:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_auth:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :firebase_auth) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :firebase_core:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_core:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_core:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':firebase_core:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_core:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :firebase_core:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_core:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_core:compileDebugShaders NO-SOURCE
+Skipping task ':firebase_core:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :firebase_core:generateDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_core:generateDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_core:generateDebugAssets UP-TO-DATE
+Skipping task ':firebase_core:generateDebugAssets' as it has no actions.
+Resolve mutations for :firebase_core:mergeDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:firebase_core:mergeDebugAssets (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :firebase_core:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':firebase_core:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':firebase_core:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :firebase_core) (Thread[#2657,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :flutter_plugin_android_lifecycle:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:flutter_plugin_android_lifecycle:mergeDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':flutter_plugin_android_lifecycle:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :flutter_plugin_android_lifecycle:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+:flutter_plugin_android_lifecycle:compileDebugShaders (Thread[#2657,Execution worker Thread 2,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:compileDebugShaders NO-SOURCE
+Skipping task ':flutter_plugin_android_lifecycle:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :flutter_plugin_android_lifecycle:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:flutter_plugin_android_lifecycle:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:generateDebugAssets UP-TO-DATE
+Skipping task ':flutter_plugin_android_lifecycle:generateDebugAssets' as it has no actions.
+Resolve mutations for :flutter_plugin_android_lifecycle:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:flutter_plugin_android_lifecycle:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':flutter_plugin_android_lifecycle:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :flutter_plugin_android_lifecycle) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :flutter_secure_storage:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:flutter_secure_storage:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_secure_storage:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':flutter_secure_storage:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :flutter_secure_storage:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:flutter_secure_storage:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_secure_storage:compileDebugShaders NO-SOURCE
+Skipping task ':flutter_secure_storage:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :flutter_secure_storage:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:flutter_secure_storage:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_secure_storage:generateDebugAssets UP-TO-DATE
+Skipping task ':flutter_secure_storage:generateDebugAssets' as it has no actions.
+Resolve mutations for :flutter_secure_storage:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:flutter_secure_storage:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_secure_storage:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':flutter_secure_storage:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :flutter_secure_storage) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :flutter_windowmanager:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:flutter_windowmanager:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_windowmanager:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':flutter_windowmanager:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :flutter_windowmanager:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:flutter_windowmanager:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_windowmanager:compileDebugShaders NO-SOURCE
+Skipping task ':flutter_windowmanager:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :flutter_windowmanager:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:flutter_windowmanager:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_windowmanager:generateDebugAssets UP-TO-DATE
+Skipping task ':flutter_windowmanager:generateDebugAssets' as it has no actions.
+Resolve mutations for :flutter_windowmanager:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:flutter_windowmanager:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_windowmanager:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':flutter_windowmanager:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :flutter_windowmanager) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :google_sign_in_android:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:google_sign_in_android:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :google_sign_in_android:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':google_sign_in_android:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :google_sign_in_android:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:google_sign_in_android:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :google_sign_in_android:compileDebugShaders NO-SOURCE
+Skipping task ':google_sign_in_android:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :google_sign_in_android:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:google_sign_in_android:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :google_sign_in_android:generateDebugAssets UP-TO-DATE
+Skipping task ':google_sign_in_android:generateDebugAssets' as it has no actions.
+Resolve mutations for :google_sign_in_android:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:google_sign_in_android:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :google_sign_in_android:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':google_sign_in_android:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :google_sign_in_android) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :local_auth_android:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:local_auth_android:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :local_auth_android:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':local_auth_android:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':local_auth_android:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :local_auth_android:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:local_auth_android:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :local_auth_android:compileDebugShaders NO-SOURCE
+Skipping task ':local_auth_android:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :local_auth_android:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:local_auth_android:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :local_auth_android:generateDebugAssets UP-TO-DATE
+Skipping task ':local_auth_android:generateDebugAssets' as it has no actions.
+Resolve mutations for :local_auth_android:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:local_auth_android:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :local_auth_android:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':local_auth_android:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':local_auth_android:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :local_auth_android) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :path_provider_android:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:path_provider_android:mergeDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :path_provider_android:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':path_provider_android:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':path_provider_android:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :path_provider_android:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+:path_provider_android:compileDebugShaders (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :path_provider_android:compileDebugShaders NO-SOURCE
+Skipping task ':path_provider_android:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :path_provider_android:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:path_provider_android:generateDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :path_provider_android:generateDebugAssets UP-TO-DATE
+Skipping task ':path_provider_android:generateDebugAssets' as it has no actions.
+Resolve mutations for :path_provider_android:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:path_provider_android:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :path_provider_android:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':path_provider_android:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':path_provider_android:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project :path_provider_android) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :app:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+:app:mergeDebugAssets (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :app:mergeDebugAssets
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugAssets' is not up-to-date because:
+  Output property 'outputDir' file D:\Food\flutter create daruchini\flutter_create_daruchini\build\app\intermediates\assets\debug\mergeDebugAssets has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+Resolve mutations for :app:copyFlutterAssetsDebug (Thread[#2656,Execution worker,5,main]) started.
+:app:copyFlutterAssetsDebug (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :app:copyFlutterAssetsDebug
+Caching disabled for task ':app:copyFlutterAssetsDebug' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:copyFlutterAssetsDebug' is not up-to-date because:
+  Output property 'destinationDir' file D:\Food\flutter create daruchini\flutter_create_daruchini\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets has been removed.
+  Output property 'destinationDir' file D:\Food\flutter create daruchini\flutter_create_daruchini\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\AssetManifest.bin has been removed.
+  Output property 'destinationDir' file D:\Food\flutter create daruchini\flutter_create_daruchini\build\app\intermediates\assets\debug\mergeDebugAssets\flutter_assets\FontManifest.json has been removed.
+  and more...
+Resolve mutations for :app:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+:app:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:processDebugGoogleServices (Thread[#2656,Execution worker,5,main]) started.
+:app:processDebugGoogleServices (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :app:processDebugGoogleServices UP-TO-DATE
+Caching disabled for task ':app:processDebugGoogleServices' because:
+  Build cache is disabled
+Skipping task ':app:processDebugGoogleServices' as it is up-to-date.
+Resolve mutations for :firebase_auth:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+:firebase_auth:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :firebase_auth:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':firebase_auth:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :firebase_auth:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:firebase_auth:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :firebase_auth:generateDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_auth:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:generateDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_auth:packageDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:firebase_auth:packageDebugResources (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :firebase_auth:packageDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_auth:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :firebase_auth) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :firebase_core:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+:firebase_core:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :firebase_core:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':firebase_core:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':firebase_core:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :firebase_core:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:firebase_core:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :firebase_core:generateDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_core:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_core:generateDebugResources' as it is up-to-date.
+Resolve mutations for :firebase_core:packageDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:firebase_core:packageDebugResources (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :firebase_core:packageDebugResources UP-TO-DATE
+Caching disabled for task ':firebase_core:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':firebase_core:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :firebase_core) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :flutter_plugin_android_lifecycle:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+:flutter_plugin_android_lifecycle:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':flutter_plugin_android_lifecycle:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :flutter_plugin_android_lifecycle:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:flutter_plugin_android_lifecycle:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:generateDebugResources UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':flutter_plugin_android_lifecycle:generateDebugResources' as it is up-to-date.
+Resolve mutations for :flutter_plugin_android_lifecycle:packageDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:flutter_plugin_android_lifecycle:packageDebugResources (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:packageDebugResources UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':flutter_plugin_android_lifecycle:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :flutter_plugin_android_lifecycle) (Thread[#2656,Execution worker,5,main]) started.
+Resolve mutations for :flutter_secure_storage:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+:flutter_secure_storage:generateDebugResValues (Thread[#2656,Execution worker,5,main]) started.
+
+> Task :flutter_secure_storage:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':flutter_secure_storage:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :flutter_secure_storage:generateDebugResources (Thread[#2656,Execution worker,5,main]) started.
+:flutter_secure_storage:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_secure_storage:generateDebugResources UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':flutter_secure_storage:generateDebugResources' as it is up-to-date.
+Resolve mutations for :flutter_secure_storage:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_secure_storage:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_secure_storage:packageDebugResources UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':flutter_secure_storage:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :flutter_secure_storage) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_windowmanager:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_windowmanager:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_windowmanager:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':flutter_windowmanager:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :flutter_windowmanager:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_windowmanager:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_windowmanager:generateDebugResources UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':flutter_windowmanager:generateDebugResources' as it is up-to-date.
+Resolve mutations for :flutter_windowmanager:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_windowmanager:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_windowmanager:packageDebugResources UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':flutter_windowmanager:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :flutter_windowmanager) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :google_sign_in_android:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:google_sign_in_android:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :google_sign_in_android:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':google_sign_in_android:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :google_sign_in_android:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:google_sign_in_android:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :google_sign_in_android:generateDebugResources UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':google_sign_in_android:generateDebugResources' as it is up-to-date.
+Resolve mutations for :google_sign_in_android:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:google_sign_in_android:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :google_sign_in_android:packageDebugResources UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':google_sign_in_android:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :google_sign_in_android) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :local_auth_android:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:local_auth_android:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :local_auth_android:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':local_auth_android:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':local_auth_android:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :local_auth_android:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:local_auth_android:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :local_auth_android:generateDebugResources UP-TO-DATE
+Caching disabled for task ':local_auth_android:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':local_auth_android:generateDebugResources' as it is up-to-date.
+Resolve mutations for :local_auth_android:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:local_auth_android:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :local_auth_android:packageDebugResources UP-TO-DATE
+Caching disabled for task ':local_auth_android:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':local_auth_android:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :local_auth_android) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :path_provider_android:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:path_provider_android:generateDebugResValues (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :path_provider_android:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':path_provider_android:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':path_provider_android:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :path_provider_android:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:path_provider_android:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :path_provider_android:generateDebugResources UP-TO-DATE
+Caching disabled for task ':path_provider_android:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':path_provider_android:generateDebugResources' as it is up-to-date.
+Resolve mutations for :path_provider_android:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:path_provider_android:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :path_provider_android:packageDebugResources UP-TO-DATE
+Caching disabled for task ':path_provider_android:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':path_provider_android:packageDebugResources' as it is up-to-date.
+work action resolve packageDebugResources (project :path_provider_android) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:generateDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:mergeDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:packageDebugResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:parseDebugLocalResources (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :firebase_auth:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:firebase_auth:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :firebase_auth:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':firebase_auth:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :firebase_auth) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :firebase_auth:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:firebase_auth:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :firebase_auth:processDebugManifest UP-TO-DATE
+Caching disabled for task ':firebase_auth:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':firebase_auth:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :firebase_auth) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :firebase_core:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:firebase_core:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :firebase_core:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':firebase_core:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':firebase_core:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :firebase_core) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :firebase_core:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:firebase_core:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :firebase_core:processDebugManifest UP-TO-DATE
+Caching disabled for task ':firebase_core:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':firebase_core:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :firebase_core) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_plugin_android_lifecycle:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_plugin_android_lifecycle:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':flutter_plugin_android_lifecycle:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :flutter_plugin_android_lifecycle) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_plugin_android_lifecycle:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_plugin_android_lifecycle:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_plugin_android_lifecycle:processDebugManifest UP-TO-DATE
+Caching disabled for task ':flutter_plugin_android_lifecycle:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':flutter_plugin_android_lifecycle:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :flutter_plugin_android_lifecycle) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_secure_storage:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_secure_storage:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_secure_storage:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':flutter_secure_storage:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :flutter_secure_storage) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_secure_storage:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_secure_storage:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_secure_storage:processDebugManifest UP-TO-DATE
+Caching disabled for task ':flutter_secure_storage:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':flutter_secure_storage:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :flutter_secure_storage) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_windowmanager:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_windowmanager:extractDeepLinksDebug (Thread[#2661,Execution worker Thread 6,5,main]) started.
+
+> Task :flutter_windowmanager:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':flutter_windowmanager:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':flutter_windowmanager:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :flutter_windowmanager) (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :flutter_windowmanager:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+:flutter_windowmanager:processDebugManifest (Thread[#2661,Execution worker Thread 6,5,main]) started.
+Resolve mutations for :google_sign_in_android:extractDeepLinksDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:google_sign_in_android:extractDeepLinksDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :google_sign_in_android:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':google_sign_in_android:extractDeepLinksDebug' as it is up-to-date.
+work action resolve navigation.json (project :google_sign_in_android) (Thread[#2660,Execution worker Thread 5,5,main]) started.
+Resolve mutations for :google_sign_in_android:processDebugManifest (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:google_sign_in_android:processDebugManifest (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :flutter_windowmanager:processDebugManifest FAILED
+Caching disabled for task ':flutter_windowmanager:processDebugManifest' because:
+  Build cache is disabled
+Task ':flutter_windowmanager:processDebugManifest' is not up-to-date because:
+  Task has failed previously.
+Incorrect package="io.adaptant.labs.flutter_windowmanager" found in source AndroidManifest.xml: C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported.
+Recommendation: remove package="io.adaptant.labs.flutter_windowmanager" from the source AndroidManifest.xml: C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\AndroidManifest.xml.
+
+> Task :google_sign_in_android:processDebugManifest UP-TO-DATE
+Caching disabled for task ':google_sign_in_android:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':google_sign_in_android:processDebugManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :google_sign_in_android) (Thread[#2660,Execution worker Thread 5,5,main]) started.
+Resolve mutations for :local_auth_android:extractDeepLinksDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+:local_auth_android:extractDeepLinksDebug (Thread[#2660,Execution worker Thread 5,5,main]) started.
+
+> Task :local_auth_android:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':local_auth_android:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':local_auth_android:extractDeepLinksDebug' as it is up-to-date.
+Build 339633ba-ff44-41fe-ad37-cf93de2b7955 is closed
+
+[Incubating] Problems report is available at: file:///D:/Food/flutter%20create%20daruchini/flutter_create_daruchini/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':flutter_windowmanager:processDebugManifest'.
+> A failure occurred while executing com.android.build.gradle.tasks.ProcessLibraryManifest$ProcessLibWorkAction
+   > Incorrect package="io.adaptant.labs.flutter_windowmanager" found in source AndroidManifest.xml: C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\AndroidManifest.xml.
+     Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported.
+     Recommendation: remove package="io.adaptant.labs.flutter_windowmanager" from the source AndroidManifest.xml: C:\Users\sharm\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_windowmanager-0.2.0\android\src\main\AndroidManifest.xml.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 47s
+83 actionable tasks: 6 executed, 77 up-to-date
+Watched directory hierarchies: [D:\Food\flutter\packages\flutter_tools\gradle, D:\Food\flutter create daruchini\flutter_create_daruchini\android]
